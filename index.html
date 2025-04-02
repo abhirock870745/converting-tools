@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DocConvert Pro | Premium Document Converter</title>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
     <style>
@@ -79,6 +81,50 @@
             background: linear-gradient(90deg, var(--primary), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        
+        /* Ad Containers */
+        .ad-container {
+            background-color: #f8f9fa;
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            text-align: center;
+            border: 1px dashed #dee2e6;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .ad-container.horizontal {
+            width: 100%;
+        }
+        
+        .ad-container.vertical {
+            width: 300px;
+            height: 250px;
+            margin: 0 auto;
+        }
+        
+        .ad-container.leaderboard {
+            width: 728px;
+            height: 90px;
+            margin: 0 auto;
+        }
+        
+        .ad-label {
+            font-size: 0.75rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        
+        .ad-placeholder {
+            color: var(--gray);
+            font-size: 0.9rem;
         }
         
         .converter-app {
@@ -403,6 +449,11 @@
             .converter-body {
                 padding: 1.5rem;
             }
+            
+            .ad-container.leaderboard {
+                width: 100%;
+                height: auto;
+            }
         }
         
         @media (max-width: 768px) {
@@ -437,6 +488,11 @@
                 width: 100%;
                 justify-content: center;
             }
+            
+            .ad-container.vertical {
+                width: 100%;
+                height: auto;
+            }
         }
         
         @media (max-width: 576px) {
@@ -459,6 +515,23 @@
     </style>
 </head>
 <body>
+    <!-- Top Leaderboard Ad -->
+    <div class="container">
+        <div class="ad-container leaderboard">
+            <span class="ad-label">Advertisement</span>
+            <!-- Google AdSense Leaderboard -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
     <header>
         <a href="/" class="logo">
             <div class="logo-icon">
@@ -485,6 +558,21 @@
             </div>
             
             <div class="converter-body">
+                <!-- Medium Rectangle Ad (Top of Converter) -->
+                <div class="ad-container horizontal">
+                    <span class="ad-label">Advertisement</span>
+                    <!-- Google AdSense Medium Rectangle -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
                 <div class="file-drop-area" id="fileDropArea">
                     <div class="file-drop-icon">
                         <i class="fas fa-cloud-upload-alt"></i>
@@ -585,6 +673,21 @@
                     </div>
                 </div>
                 
+                <!-- Medium Rectangle Ad (Bottom of Converter) -->
+                <div class="ad-container horizontal">
+                    <span class="ad-label">Advertisement</span>
+                    <!-- Google AdSense Medium Rectangle -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="XXXXXXXXXX"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
                 <div class="spinner" id="conversionSpinner"></div>
                 
                 <div class="action-buttons">
@@ -596,6 +699,38 @@
                     </a>
                 </div>
             </div>
+        </div>
+        
+        <!-- Sidebar-style Vertical Ad (for desktop) -->
+        <div class="ad-container vertical" style="display: none;">
+            <span class="ad-label">Advertisement</span>
+            <!-- Google AdSense Vertical Rectangle -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    
+    <!-- Footer Ad -->
+    <div class="container">
+        <div class="ad-container leaderboard">
+            <span class="ad-label">Advertisement</span>
+            <!-- Google AdSense Leaderboard -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="XXXXXXXXXX"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
     </div>
 
@@ -627,6 +762,19 @@
             
             let currentFile = null;
             let conversionType = 'pdf-to-word';
+            
+            // Show vertical ad on desktop only
+            if (window.innerWidth > 992) {
+                document.querySelector('.ad-container.vertical').style.display = 'block';
+            }
+            
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 992) {
+                    document.querySelector('.ad-container.vertical').style.display = 'block';
+                } else {
+                    document.querySelector('.ad-container.vertical').style.display = 'none';
+                }
+            });
             
             // Conversion Type Switching
             conversionOptions.forEach(option => {
